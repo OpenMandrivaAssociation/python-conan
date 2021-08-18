@@ -76,10 +76,10 @@ Conan C/C++ package manager
 
 %install
 %py_install
-%python_clone -a %{buildroot}%{_bindir}/conan
-%python_clone -a %{buildroot}%{_bindir}/conan_server
-%python_clone -a %{buildroot}%{_bindir}/conan_build_info
-%python_expand %fdupes %{buildroot}%{$python_sitelib}
+#python_clone -a %{buildroot}%{_bindir}/conan
+#python_clone -a %{buildroot}%{_bindir}/conan_server
+#python_clone -a %{buildroot}%{_bindir}/conan_build_info
+#python_expand %fdupes %{buildroot}%{$python_sitelib}
 
 %post
 %python_install_alternative conan conan_server conan_build_info
