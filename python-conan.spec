@@ -90,7 +90,7 @@ Conan C/C++ package manager
 %files
 %doc README.rst
 %license LICENSE.md
-%python_alternative %{_bindir}/conan
-%python_alternative %{_bindir}/conan_server
-%python_alternative %{_bindir}/conan_build_info
+%{_bindir}/conan
+%{_bindir}/conan_server
+%{_bindir}/conan_build_info
 %{python_sitelib}/*
