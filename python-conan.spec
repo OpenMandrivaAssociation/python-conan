@@ -72,10 +72,10 @@ Conan C/C++ package manager
 %setup -q -n conan-%{version}
 
 %build
-%python_build
+%py_build
 
 %install
-%python_install
+%py_install
 %python_clone -a %{buildroot}%{_bindir}/conan
 %python_clone -a %{buildroot}%{_bindir}/conan_server
 %python_clone -a %{buildroot}%{_bindir}/conan_build_info
