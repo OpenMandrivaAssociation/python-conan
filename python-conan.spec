@@ -1,31 +1,31 @@
 Name:           python-conan
-Version:        1.32.1
-Release:        0
+Version:        1.39.0
+Release:        1
 Summary:        Conan C/C++ package manager
 License:        MIT
 URL:            https://conan.io
 Source:         https://files.pythonhosted.org/packages/source/c/conan/conan-%{version}.tar.gz
-BuildRequires:  python-rpm-macros
-BuildRequires:  %{python_module setuptools}
+BuildRequires:  pkgconfig(python)
+BuildRequires:  python3dist(setuptools)
 # SECTION test requirements
-BuildRequires:  %{python_module bottle >= 0.12.8}
-BuildRequires:  %{python_module colorama >= 0.3.3}
-BuildRequires:  %{python_module deprecation >= 2.0}
-BuildRequires:  %{python_module distro >= 1.0.2}
-BuildRequires:  %{python_module fasteners >= 0.14.1}
-BuildRequires:  %{python_module future >= 0.16.0}
-BuildRequires:  %{python_module Jinja2 >= 2.9}
-BuildRequires:  %{python_module node-semver >= 0.6.1}
-BuildRequires:  %{python_module patch-ng >= 1.17.4}
-BuildRequires:  %{python_module pluginbase >= 0.5}
-BuildRequires:  %{python_module pygments >= 2.0}
-BuildRequires:  %{python_module PyJWT >= 1.4.0}
-BuildRequires:  %{python_module python-dateutil >= 2.7.0}
-BuildRequires:  %{python_module PyYAML >= 3.11}
-BuildRequires:  %{python_module requests >= 2.8.1}
-BuildRequires:  %{python_module six >= 1.10.0}
-BuildRequires:  %{python_module tqdm >= 4.28.1}
-BuildRequires:  %{python_module urllib3 < 1.27}
+#BuildRequires:  %{python_module bottle >= 0.12.8}
+#BuildRequires:  %{python_module colorama >= 0.3.3}
+#BuildRequires:  %{python_module deprecation >= 2.0}
+#BuildRequires:  %{python_module distro >= 1.0.2}
+#BuildRequires:  %{python_module fasteners >= 0.14.1}
+#BuildRequires:  %{python_module future >= 0.16.0}
+#BuildRequires:  %{python_module Jinja2 >= 2.9}
+#BuildRequires:  %{python_module node-semver >= 0.6.1}
+#BuildRequires:  %{python_module patch-ng >= 1.17.4}
+#BuildRequires:  %{python_module pluginbase >= 0.5}
+#BuildRequires:  %{python_module pygments >= 2.0}
+#BuildRequires:  %{python_module PyJWT >= 1.4.0}
+#BuildRequires:  %{python_module python-dateutil >= 2.7.0}
+#BuildRequires:  %{python_module PyYAML >= 3.11}
+#BuildRequires:  %{python_module requests >= 2.8.1}
+#BuildRequires:  %{python_module six >= 1.10.0}
+#BuildRequires:  %{python_module tqdm >= 4.28.1}
+#BuildRequires:  %{python_module urllib3 < 1.27}
 # /SECTION
 BuildRequires:  fdupes
 Requires:       python-bottle >= 0.12.8
