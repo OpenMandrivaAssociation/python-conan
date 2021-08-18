@@ -87,7 +87,7 @@ Conan C/C++ package manager
 %postun
 %python_uninstall_alternative conan
 
-%files %{python_files}
+%files
 %doc README.rst
 %license LICENSE.md
 %python_alternative %{_bindir}/conan
