@@ -63,7 +63,7 @@ Suggests:       python-bottle
 Suggests:       python-pytest >= 4.6.11
 Suggests:       python-pytest >= 6.1.1
 BuildArch:      noarch
-%python_subpackages
+#python_subpackages
 
 %description
 Conan C/C++ package manager
