@@ -5,6 +5,7 @@ Summary:        Conan C/C++ package manager
 License:        MIT
 URL:            https://conan.io
 Source:         https://files.pythonhosted.org/packages/source/c/conan/conan-%{version}.tar.gz
+Patch0:         conan-relax-dependency-openmandriva.patch
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
 # SECTION test requirements
@@ -70,6 +71,7 @@ Conan C/C++ package manager
 
 %prep
 %setup -q -n conan-%{version}
+%autopatch -p1
 
 %build
 %py_build
