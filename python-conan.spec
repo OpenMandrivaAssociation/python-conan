@@ -1,6 +1,6 @@
 Summary:        Conan C/C++ package manager
 Name:           python-conan
-Version:        2.0.4
+Version:        2.0.5
 Release:        1
 License:        MIT
 URL:            https://conan.io
