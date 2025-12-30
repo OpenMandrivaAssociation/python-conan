@@ -1,7 +1,7 @@
 Summary:        Conan C/C++ package manager
 Name:           python-conan
 Version:        2.0.7
-Release:        1
+Release:        2
 License:        MIT
 URL:            https://conan.io
 Source:         https://pypi.io/packages/source/c/conan/conan-%{version}.tar.gz
